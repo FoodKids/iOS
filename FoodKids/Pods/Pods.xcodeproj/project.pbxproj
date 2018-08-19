@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083251222192DA78D2B6C73510B4C5D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		18AE135901CE7361F5AACDB58F57E998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		234F0022F6E7B7224D6862A881E5C3BB /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 241843CBE005A3E4402AE2632B05E805 /* TagListView-dummy.m */; };
-		3D8AEB9281839AA801C6DB9058585B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5137B408165999648CE5E24155BDCC18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5EDB08FB9B9D8862502E45D937ECEF66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		6680354C60AEDED81B876F7CA9DCD958 /* Pods-FoodKidsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C388987328207B2AB4751F310A2B379 /* Pods-FoodKidsUITests-dummy.m */; };
 		6CB1CA2505709FF3A467C5357D8559B7 /* Pods-FoodKids-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F40626D81188C8C25A93A1A781871341 /* Pods-FoodKids-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		706553BD029F4A6A77C070147F5FC3C8 /* Pods-FoodKidsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38600E6A795FA035BC4BD66CF806DA07 /* Pods-FoodKidsTests-dummy.m */; };
 		7A7BD0AC495893641A6F1ECFAFC32218 /* Pods-FoodKids-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 069C2488AB7EBF407DFDB6E87C1C957B /* Pods-FoodKids-dummy.m */; };
 		85F0A47FC3F5EFB611E31AC99C35F8BF /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D5EA936631E4340A25086B0B52D1D /* TagListView.swift */; };
 		892F0286DF17412278A67697CB092070 /* Pods-FoodKidsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F27943DD73DD01925149892D950F6F5 /* Pods-FoodKidsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD22D55F0809DB014A0FC4A6F91F70DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CD65368BCD1F3908D61721AEE557BF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D24659A5A269267B2A7537A28369FDFA /* Pods-FoodKidsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B11CC0A72E89E3D04A1FA1BD80A33D85 /* Pods-FoodKidsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DED72C3AB3F3466194144EC4B62E6EB0 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A348AF8B856B1FF813D2719DC2180E /* TagView.swift */; };
 		F08DBBBE76A3AD95C5469EF4A71AA7C4 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCF9A936988AEE8CEE4751D0CDA1D0D /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA6BB30151916532FF5A939DB6DE791C /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9EE24AE13648FA7ACB3AE92F9D2C3 /* CloseButton.swift */; };
+		FD073938266C8E1376FC0E079640E0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,8 @@
 		4C63EC0288845B2C0C7FF33A96FFD857 /* Pods-FoodKids-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodKids-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4E40C3811999793F80FAC720333DD616 /* Pods-FoodKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodKids.release.xcconfig"; sourceTree = "<group>"; };
 		53B35D6E46CFB703F3A50D61C84AC91B /* Pods-FoodKids-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodKids-frameworks.sh"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		62428499014B3EE9B1E01AE23F965A10 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6F6E007CF01310E5283AB2413C3D85B9 /* Pods-FoodKids-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodKids-resources.sh"; sourceTree = "<group>"; };
 		718FB55CFA1646E31E6C7ECC4065D9A2 /* Pods-FoodKidsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodKidsUITests-frameworks.sh"; sourceTree = "<group>"; };
 		78173497E73299C5269FEC7C6F201629 /* Pods-FoodKidsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodKidsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8AEB9281839AA801C6DB9058585B6B /* Foundation.framework in Frameworks */,
+				18AE135901CE7361F5AACDB58F57E998 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5137B408165999648CE5E24155BDCC18 /* Foundation.framework in Frameworks */,
+				5EDB08FB9B9D8862502E45D937ECEF66 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD65368BCD1F3908D61721AEE557BF17 /* Foundation.framework in Frameworks */,
+				FD073938266C8E1376FC0E079640E0A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD22D55F0809DB014A0FC4A6F91F70DE /* Foundation.framework in Frameworks */,
+				083251222192DA78D2B6C73510B4C5D5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +199,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +235,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -258,14 +266,6 @@
 				481381B5E549C7BE84519304A3DB1F6D /* Pods-FoodKidsUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,7 +547,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKids/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKids/Pods-FoodKids.modulemap";
 				OTHER_LDFLAGS = "";
@@ -583,7 +587,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKids/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKids/Pods-FoodKids.modulemap";
 				OTHER_LDFLAGS = "";
@@ -619,7 +627,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKidsUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -654,7 +666,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKidsUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -688,7 +704,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKidsTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKidsTests/Pods-FoodKidsTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -722,7 +742,11 @@
 				INFOPLIST_FILE = "Target Support Files/TagListView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
 				PRODUCT_MODULE_NAME = TagListView;
 				PRODUCT_NAME = TagListView;
@@ -812,7 +836,11 @@
 				INFOPLIST_FILE = "Target Support Files/TagListView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
 				PRODUCT_MODULE_NAME = TagListView;
 				PRODUCT_NAME = TagListView;
@@ -846,7 +874,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-FoodKidsTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FoodKidsTests/Pods-FoodKidsTests.modulemap";
 				OTHER_LDFLAGS = "";

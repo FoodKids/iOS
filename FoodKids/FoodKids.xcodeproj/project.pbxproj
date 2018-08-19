@@ -15,10 +15,13 @@
 		08AB7AF22128E7A3009D09E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AB7AF02128E7A3009D09E9 /* LaunchScreen.storyboard */; };
 		08AB7AFD2128E7A3009D09E9 /* FoodKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7AFC2128E7A3009D09E9 /* FoodKidsTests.swift */; };
 		08AB7B082128E7A3009D09E9 /* FoodKidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B072128E7A3009D09E9 /* FoodKidsUITests.swift */; };
-		08AB7B1A2128F317009D09E9 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B192128F317009D09E9 /* ViewData.swift */; };
-		08AB7B1C2128F33A009D09E9 /* ControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B1B2128F339009D09E9 /* ControllerData.swift */; };
 		08AB7B1E2128F567009D09E9 /* ViewFoodRetrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B1D2128F567009D09E9 /* ViewFoodRetrictions.swift */; };
 		08AB7B202128F589009D09E9 /* ControllerFoodRetrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */; };
+		571FEBCA21293A25007B57BE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBC921293A25007B57BE /* GradientView.swift */; };
+		576690B4212942A90020E345 /* IntroChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690B3212942A90020E345 /* IntroChildViewController.swift */; };
+		576690B6212945120020E345 /* TagListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690B5212945120020E345 /* TagListHelper.swift */; };
+		576690B821294BAC0020E345 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690B721294BAC0020E345 /* AppButton.swift */; };
+		576690BA21294EB60020E345 /* IntroRestrictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690B921294EB60020E345 /* IntroRestrictionViewController.swift */; };
 		6276B89FED99D3BDFF7CFCA5 /* Pods_FoodKidsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A881BF494220B15CA33648D /* Pods_FoodKidsTests.framework */; };
 		C58AFCFD816EF5A3F291D7DA /* Pods_FoodKidsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CCF02693878DBE8DBDE829 /* Pods_FoodKidsUITests.framework */; };
 		C5EE0109EF6E053327A5FA27 /* Pods_FoodKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */; };
@@ -56,14 +59,17 @@
 		08AB7B032128E7A3009D09E9 /* FoodKidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodKidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB7B072128E7A3009D09E9 /* FoodKidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodKidsUITests.swift; sourceTree = "<group>"; };
 		08AB7B092128E7A3009D09E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08AB7B192128F317009D09E9 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
-		08AB7B1B2128F339009D09E9 /* ControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerData.swift; sourceTree = "<group>"; };
 		08AB7B1D2128F567009D09E9 /* ViewFoodRetrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFoodRetrictions.swift; sourceTree = "<group>"; };
 		08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFoodRetrictions.swift; sourceTree = "<group>"; };
 		18F3CB917C18D6934186AAEB /* Pods-FoodKidsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2A881BF494220B15CA33648D /* Pods_FoodKidsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKidsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B61E2EDD0E2581C5A1A2B4 /* Pods-FoodKidsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsTests/Pods-FoodKidsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		45CCF02693878DBE8DBDE829 /* Pods_FoodKidsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKidsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		571FEBC921293A25007B57BE /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		576690B3212942A90020E345 /* IntroChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroChildViewController.swift; sourceTree = "<group>"; };
+		576690B5212945120020E345 /* TagListHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListHelper.swift; sourceTree = "<group>"; };
+		576690B721294BAC0020E345 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		576690B921294EB60020E345 /* IntroRestrictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRestrictionViewController.swift; sourceTree = "<group>"; };
 		B78E4421EC308F0046CBBF6F /* Pods-FoodKidsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE360009DE54C45F1FE9392 /* Pods-FoodKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKids/Pods-FoodKids.debug.xcconfig"; sourceTree = "<group>"; };
 		FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +130,7 @@
 		08AB7AE62128E7A1009D09E9 /* FoodKids */ = {
 			isa = PBXGroup;
 			children = (
+				576690B5212945120020E345 /* TagListHelper.swift */,
 				08AB7B152128E7F9009D09E9 /* App Delegate */,
 				08AB7B162128E80E009D09E9 /* Controllers */,
 				08AB7B182128E840009D09E9 /* Views */,
@@ -164,7 +171,8 @@
 		08AB7B162128E80E009D09E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				08AB7B1B2128F339009D09E9 /* ControllerData.swift */,
+				576690B3212942A90020E345 /* IntroChildViewController.swift */,
+				576690B921294EB60020E345 /* IntroRestrictionViewController.swift */,
 				08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */,
 				0876EFFD21292DCC00F6BC98 /* ControllerMakeOrder.swift */,
 			);
@@ -182,9 +190,10 @@
 		08AB7B182128E840009D09E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				08AB7B192128F317009D09E9 /* ViewData.swift */,
+				571FEBC921293A25007B57BE /* GradientView.swift */,
 				08AB7B1D2128F567009D09E9 /* ViewFoodRetrictions.swift */,
 				0876EFFF21292DE700F6BC98 /* ViewMakeOrder.swift */,
+				576690B721294BAC0020E345 /* AppButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,13 +431,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08AB7B1A2128F317009D09E9 /* ViewData.swift in Sources */,
+				576690B4212942A90020E345 /* IntroChildViewController.swift in Sources */,
 				08AB7B202128F589009D09E9 /* ControllerFoodRetrictions.swift in Sources */,
 				0876EFFE21292DCC00F6BC98 /* ControllerMakeOrder.swift in Sources */,
+				576690B821294BAC0020E345 /* AppButton.swift in Sources */,
+				576690BA21294EB60020E345 /* IntroRestrictionViewController.swift in Sources */,
 				0876F00021292DE700F6BC98 /* ViewMakeOrder.swift in Sources */,
 				08AB7B1E2128F567009D09E9 /* ViewFoodRetrictions.swift in Sources */,
+				576690B6212945120020E345 /* TagListHelper.swift in Sources */,
 				08AB7AE82128E7A1009D09E9 /* AppDelegate.swift in Sources */,
-				08AB7B1C2128F33A009D09E9 /* ControllerData.swift in Sources */,
+				571FEBCA21293A25007B57BE /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
