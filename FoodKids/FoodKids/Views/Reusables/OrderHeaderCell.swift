@@ -1,5 +1,5 @@
 //
-//  OrderTableCell.swift
+//  OrderHeaderCell.swift
 //  FoodKids
 //
 //  Created by Jean Paul Marinho on 19/08/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderTableCell: UITableViewCell {
+class OrderHeaderCell: UITableViewCell {
 
-    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var titleLabel: UILabel!
 }

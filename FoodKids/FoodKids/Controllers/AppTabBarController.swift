@@ -25,7 +25,7 @@ extension AppTabBarController : UITabBarControllerDelegate {
         if viewController is OrderViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let controller = storyboard.instantiateViewController(withIdentifier: "ControllerMakeOrder") as? OrderViewController {
+            if let controller = storyboard.instantiateViewController(withIdentifier: "OrderViewController") as? OrderViewController {
                 
                 controller.modalPresentationStyle = .fullScreen
                 

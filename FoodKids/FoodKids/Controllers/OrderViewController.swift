@@ -10,6 +10,16 @@ import UIKit
 
 class OrderViewController: UIViewController {
 
+    let weekdays = [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado,"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,48 +32,59 @@ class OrderViewController: UIViewController {
 
 extension OrderViewController: UITableViewDataSource, UITableViewDelegate  {
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "orderHeaderCell") as! OrderHeaderCell
+        switch section {
+        case 0:
+            cell.titleLabel.text = "Café da manhã"
+        case 1:
+            cell.titleLabel.text = "Almoço"
+        case 2:
+            cell.titleLabel.text = "Jantar"
+        default:
+            cell.titleLabel.text = ""
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 25
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTeste") as! UITableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "orderTableCell") as! OrderTableCell
+        cell.collectionView.dataSource = self
+        cell.collectionView.delegate = self
         return cell
     }
 }
 
 
-//
-//extension OrderViewController:     , UITableViewDelegate {
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 6
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCell
-//        return cell
-//    }
-//
-//
-//}
-//
-//
-//
-//
+
 
 extension OrderViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return self.weekdays.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCell
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "orderCollectionCell", for: indexPath) as! OrderCollectionCell
+        cell.circleImageView.image = UIImage(named: "homeCell\(indexPath.row+1)")
+        cell.titleLabel.text = self.weekdays[indexPath.row]
+        cell.priceLabel.text = "R$15-17"
         return cell
     }
 }
