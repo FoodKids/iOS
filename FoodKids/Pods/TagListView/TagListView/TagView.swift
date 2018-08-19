@@ -98,12 +98,12 @@ open class TagView: UIButton {
         else if isSelected {
             backgroundColor = selectedBackgroundColor ?? tagBackgroundColor
             layer.borderColor = selectedBorderColor?.cgColor ?? borderColor?.cgColor
-            setTitleColor(selectedTextColor, for: UIControl.State())
+            setTitleColor(selectedTextColor, for: UIControl().state)
         }
         else {
             backgroundColor = tagBackgroundColor
             layer.borderColor = borderColor?.cgColor
-            setTitleColor(textColor, for: UIControl.State())
+            setTitleColor(textColor, for: UIControl().state)
         }
     }
     
@@ -162,7 +162,7 @@ open class TagView: UIButton {
     
     public init(title: String) {
         super.init(frame: CGRect.zero)
-        setTitle(title, for: UIControl.State())
+        setTitle(title, for: UIControl().state)
         
         setupView()
     }
