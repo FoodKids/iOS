@@ -10,7 +10,27 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var homeCellsTitle = [
+    "Sem medo!", "Fazendinha fit", "De última hora!", "Férias até R$30,00", "Lorem ipsum", "Lorem ipsum"]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+
+
+
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCell
+        cell.imageView.image = UIImage(named: "homeCell\(indexPath.row+1)")
+        cell.titleLabel.text = self.homeCellsTitle[indexPath.row]
+        return cell
+    }
+    
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class AppTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +18,14 @@ class TabBarController: UITabBarController {
 }
 
 
-extension TabBarController : UITabBarControllerDelegate {
+extension AppTabBarController : UITabBarControllerDelegate {
    
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
-        if viewController is ControllerMakeOrder {
+        if viewController is OrderViewController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            if let controller = storyboard.instantiateViewController(withIdentifier: "ControllerMakeOrder") as? ControllerMakeOrder {
+            if let controller = storyboard.instantiateViewController(withIdentifier: "ControllerMakeOrder") as? OrderViewController {
                 
                 controller.modalPresentationStyle = .fullScreen
                 

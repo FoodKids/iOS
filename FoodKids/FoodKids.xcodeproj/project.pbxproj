@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		086E7E162129348D001A06B3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E152129348D001A06B3 /* TabBarController.swift */; };
+		086E7E162129348D001A06B3 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E152129348D001A06B3 /* AppTabBarController.swift */; };
 		086E7E1821293E12001A06B3 /* ControllerFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1721293E12001A06B3 /* ControllerFeedback.swift */; };
 		086E7E1C21293EB5001A06B3 /* ControllerInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */; };
 		086E7E1E21293EDA001A06B3 /* ViewInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1D21293EDA001A06B3 /* ViewInvoice.swift */; };
 		086E7E2221294942001A06B3 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086E7E2121294942001A06B3 /* fontawesome-webfont.ttf */; };
-		0876EFFE21292DCC00F6BC98 /* ControllerMakeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0876EFFD21292DCC00F6BC98 /* ControllerMakeOrder.swift */; };
 		0876F00021292DE700F6BC98 /* ViewMakeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0876EFFF21292DE700F6BC98 /* ViewMakeOrder.swift */; };
 		08AB7AE82128E7A1009D09E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7AE72128E7A1009D09E9 /* AppDelegate.swift */; };
 		08AB7AED2128E7A1009D09E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AB7AEB2128E7A1009D09E9 /* Main.storyboard */; };
@@ -30,6 +29,8 @@
 		576690C921295B770020E345 /* ViewFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1921293E32001A06B3 /* ViewFeedback.swift */; };
 		576690CB21295BF70020E345 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690CA21295BF70020E345 /* HomeViewController.swift */; };
 		576690CD212960170020E345 /* AppProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690CC212960170020E345 /* AppProgressView.swift */; };
+		576690D0212967930020E345 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690CF212967930020E345 /* HomeCell.swift */; };
+		57B79F862129714F00139596 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B79F852129714F00139596 /* OrderViewController.swift */; };
 		6276B89FED99D3BDFF7CFCA5 /* Pods_FoodKidsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A881BF494220B15CA33648D /* Pods_FoodKidsTests.framework */; };
 		C58AFCFD816EF5A3F291D7DA /* Pods_FoodKidsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CCF02693878DBE8DBDE829 /* Pods_FoodKidsUITests.framework */; };
 		C5EE0109EF6E053327A5FA27 /* Pods_FoodKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */; };
@@ -53,13 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		086E7E152129348D001A06B3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		086E7E152129348D001A06B3 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		086E7E1721293E12001A06B3 /* ControllerFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFeedback.swift; sourceTree = "<group>"; };
 		086E7E1921293E32001A06B3 /* ViewFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFeedback.swift; sourceTree = "<group>"; };
 		086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerInvoice.swift; sourceTree = "<group>"; };
 		086E7E1D21293EDA001A06B3 /* ViewInvoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInvoice.swift; sourceTree = "<group>"; };
 		086E7E2121294942001A06B3 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
-		0876EFFD21292DCC00F6BC98 /* ControllerMakeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMakeOrder.swift; sourceTree = "<group>"; };
 		0876EFFF21292DE700F6BC98 /* ViewMakeOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMakeOrder.swift; sourceTree = "<group>"; };
 		08AB7AE42128E7A1009D09E9 /* FoodKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AB7AE72128E7A1009D09E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		576690C721295AF20020E345 /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		576690CA21295BF70020E345 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		576690CC212960170020E345 /* AppProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProgressView.swift; sourceTree = "<group>"; };
+		576690CF212967930020E345 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		57B79F852129714F00139596 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		B78E4421EC308F0046CBBF6F /* Pods-FoodKidsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE360009DE54C45F1FE9392 /* Pods-FoodKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKids/Pods-FoodKids.debug.xcconfig"; sourceTree = "<group>"; };
 		FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,10 +212,10 @@
 				576690B3212942A90020E345 /* IntroViewController.swift */,
 				576690CA21295BF70020E345 /* HomeViewController.swift */,
 				08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */,
-				0876EFFD21292DCC00F6BC98 /* ControllerMakeOrder.swift */,
-				086E7E152129348D001A06B3 /* TabBarController.swift */,
+				086E7E152129348D001A06B3 /* AppTabBarController.swift */,
 				086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */,
 				086E7E1721293E12001A06B3 /* ControllerFeedback.swift */,
+				57B79F852129714F00139596 /* OrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 		08AB7B182128E840009D09E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				576690CE2129676F0020E345 /* Reusables */,
 				576690C721295AF20020E345 /* AppButton.swift */,
 				571FEBC921293A25007B57BE /* GradientView.swift */,
 				576690BB212954990020E345 /* IntroChildView.swift */,
@@ -271,6 +274,14 @@
 				576690B5212945120020E345 /* TagListHelper.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		576690CE2129676F0020E345 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				576690CF212967930020E345 /* HomeCell.swift */,
+			);
+			path = Reusables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,11 +499,10 @@
 			files = (
 				576690B4212942A90020E345 /* IntroViewController.swift in Sources */,
 				576690BE212954FC0020E345 /* IntroRestrictionView.swift in Sources */,
-				086E7E162129348D001A06B3 /* TabBarController.swift in Sources */,
+				086E7E162129348D001A06B3 /* AppTabBarController.swift in Sources */,
 				576690C921295B770020E345 /* ViewFeedback.swift in Sources */,
 				576690C821295AF20020E345 /* AppButton.swift in Sources */,
 				08AB7B202128F589009D09E9 /* ControllerFoodRetrictions.swift in Sources */,
-				0876EFFE21292DCC00F6BC98 /* ControllerMakeOrder.swift in Sources */,
 				086E7E1C21293EB5001A06B3 /* ControllerInvoice.swift in Sources */,
 				0876F00021292DE700F6BC98 /* ViewMakeOrder.swift in Sources */,
 				576690BC212954990020E345 /* IntroChildView.swift in Sources */,
@@ -502,7 +512,9 @@
 				576690C621295AD90020E345 /* TagListHelper.swift in Sources */,
 				08AB7AE82128E7A1009D09E9 /* AppDelegate.swift in Sources */,
 				571FEBCA21293A25007B57BE /* GradientView.swift in Sources */,
+				576690D0212967930020E345 /* HomeCell.swift in Sources */,
 				576690CB21295BF70020E345 /* HomeViewController.swift in Sources */,
+				57B79F862129714F00139596 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

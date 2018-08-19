@@ -200,13 +200,73 @@
         <!--Controlle Home-->
         <scene sceneID="EWC-GF-t42">
             <objects>
-                <viewController title="Controlle Home" id="leN-EY-bGF" sceneMemberID="viewController">
+                <viewController title="Controlle Home" id="leN-EY-bGF" customClass="HomeViewController" customModule="FoodKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hc9-pD-GOK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-kj-jT2">
+                                <rect key="frame" x="0.0" y="398" width="414" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Wx8-oT-6jt">
+                                    <size key="itemSize" width="130" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCell" id="9gN-R3-UqU" customClass="HomeCell" customModule="FoodKids" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-9R-sEc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKy-wL-y3E">
+                                                    <rect key="frame" x="6" y="107" width="117" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="3RU-9R-sEc" id="1bA-DW-7vk"/>
+                                            <outlet property="titleLabel" destination="EKy-wL-y3E" id="Dqx-n0-MZQ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="leN-EY-bGF" id="GxG-j8-Xn8"/>
+                                    <outlet property="delegate" destination="leN-EY-bGF" id="i4P-zG-u0Z"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Olá, mamãe." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj9-xW-aZJ">
+                                <rect key="frame" x="20" y="71" width="179" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.68627450980392157" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vamos ver como está a alimentação do João?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-g0-OYl">
+                                <rect key="frame" x="27" y="115" width="295" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile" translatesAutoresizingMaskIntoConstraints="NO" id="Z7N-5h-uH1">
+                                <rect key="frame" x="354" y="76" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tiZ-hZ-nkn" userLabel="Dashboard View">
-                                <rect key="frame" x="0.0" y="153" width="414" height="149"/>
+                                <rect key="frame" x="0.0" y="166" width="414" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="eE1-8f-QUt">
@@ -300,14 +360,28 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flutuação de IMC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5s-Jx-V01">
+                                        <rect key="frame" x="20" y="129" width="113" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sugestões" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSI-rX-AvO">
+                                <rect key="frame" x="20" y="364" width="110" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R11-z2-BQo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Início" id="oPj-zL-klz"/>
+                    <tabBarItem key="tabBarItem" title="Início" image="icons8-home-page-75" selectedImage="icons8-home-page-filled-75" id="oPj-zL-klz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6X-YG-aqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,16 +406,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dNb-HV-82c"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meus Pedidos" id="hzD-vP-Egp"/>
+                    <tabBarItem key="tabBarItem" title="Meus Pedidos" image="icons8-today-75" selectedImage="icons8-today-filled-75" id="hzD-vP-Egp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcL-r9-Ww1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418.840579710145" y="884.51086956521749"/>
+            <point key="canvasLocation" x="1939" y="885"/>
         </scene>
         <!--Controller Order-->
         <scene sceneID="Nmv-hB-LZQ">
             <objects>
-                <viewController storyboardIdentifier="ControllerMakeOrder" title="Controller Order" id="Bt9-vG-FGG" customClass="ControllerMakeOrder" customModule="FoodKids" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ControllerMakeOrder" title="Controller Order" id="Bt9-vG-FGG" customClass="OrderViewController" customModule="FoodKids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ycy-yV-MNb" customClass="ViewMakeOrder" customModule="FoodKids" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,11 +446,11 @@
                             <outlet property="btnReturn" destination="P32-c7-mFQ" id="YI5-BA-xEj"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fazer Pedido" id="scE-j0-mbL"/>
+                    <tabBarItem key="tabBarItem" title="Fazer Pedido" image="icons8-fork-and-knife-crossed-75" selectedImage="icons8-restaurant-filled-75" id="scE-j0-mbL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hE-Fm-8AT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418.840579710145" y="132.88043478260872"/>
+            <point key="canvasLocation" x="2235" y="42"/>
         </scene>
         <!--ControllerMenu-->
         <scene sceneID="bhh-Lr-Oha">
@@ -391,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TG-VB-XVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="133"/>
+            <point key="canvasLocation" x="2986" y="823"/>
         </scene>
         <!--Controller Invoice-->
         <scene sceneID="Xty-hJ-cxP">
@@ -567,14 +641,15 @@
             </objects>
             <point key="canvasLocation" x="3724.6376811594205" y="132.88043478260872"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--App Tab Bar Controller-->
         <scene sceneID="ySr-EG-fgd">
             <objects>
-                <tabBarController id="CLw-qH-CqH" customClass="TabBarController" customModule="FoodKids" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="CLw-qH-CqH" customClass="AppTabBarController" customModule="FoodKids" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1LY-SU-Pc1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.27058823529999998" green="0.68627450980000004" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="leN-EY-bGF" kind="relationship" relationship="viewControllers" id="IGX-tD-jpn"/>
@@ -607,6 +682,13 @@
     </scenes>
     <resources>
         <image name="Chart" width="59.666667938232422" height="28.666666030883789"/>
+        <image name="icon-profile" width="75" height="75"/>
+        <image name="icons8-fork-and-knife-crossed-75" width="56.25" height="56.25"/>
+        <image name="icons8-home-page-75" width="56.25" height="56.25"/>
+        <image name="icons8-home-page-filled-75" width="56.25" height="56.25"/>
+        <image name="icons8-restaurant-filled-75" width="56.25" height="56.25"/>
+        <image name="icons8-today-75" width="56.25" height="56.25"/>
+        <image name="icons8-today-filled-75" width="56.25" height="56.25"/>
         <image name="starEmpty" width="22" height="22"/>
         <image name="starFull" width="22" height="22"/>
     </resources>
