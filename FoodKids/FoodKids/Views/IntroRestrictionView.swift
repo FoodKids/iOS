@@ -1,5 +1,5 @@
 //
-//  IntroRestrictionViewController.swift
+//  IntroRestrictionView.swift
 //  FoodKids
 //
 //  Created by Jean Paul Marinho on 19/08/18.
@@ -9,13 +9,13 @@
 import UIKit
 import TagListView
 
-class IntroRestrictionViewController: UIViewController {
+class IntroRestrictionView: UIView {
 
     @IBOutlet weak var tagListView: TagListView!
     var tagListDelegateHandler = TagListDelegateHandler(state: .multiple)
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         TagListView.config(view: self.tagListView)
         self.tagListView.addTags(["Lactose", "Açúcar", "Vegetariana"])
         self.tagListView.delegate = self.tagListDelegateHandler

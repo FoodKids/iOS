@@ -1,5 +1,5 @@
 //
-//  IntroChildViewController.swift
+//  IntroChildView.swift
 //  FoodKids
 //
 //  Created by Jean Paul Marinho on 19/08/18.
@@ -9,19 +9,16 @@
 import UIKit
 import TagListView
 
-class IntroChildViewController: UIViewController {
+class IntroChildView: UIView {
 
     @IBOutlet weak var tagListView: TagListView!
     var tagListDelegateHandler = TagListDelegateHandler(state: .single)
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
         TagListView.config(view: self.tagListView)
         self.tagListView.addTags(["0-2", "2-4", "4-6", "6-8", "8-12"])
         self.tagListView.delegate = self.tagListDelegateHandler
     }
 
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        
-    }
 }
