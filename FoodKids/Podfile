@@ -9,7 +9,8 @@ target 'FoodKids' do
   pod 'TagListView', '~> 1.0'
   pod 'FloatRatingView', '~> 2.0.0'
   pod 'KRActivityIndicatorView', '~> 2.1'
-
+  pod 'lottie-ios'
+  
   target 'FoodKidsTests' do
     inherit! :search_paths
     # Pods for testing

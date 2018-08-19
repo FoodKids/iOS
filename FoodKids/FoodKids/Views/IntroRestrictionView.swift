@@ -17,7 +17,7 @@ class IntroRestrictionView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         TagListView.config(view: self.tagListView)
-        self.tagListView.addTags(["Lactose", "Açúcar", "Vegetariana"])
+        self.tagListView.addTags(["Diabetes", "Lactose", "Vegetariano", "Dislipidemia", "Constipação", "Rejeição ao glúten", "Doença de Crohn", "Gastrite"])
         self.tagListView.delegate = self.tagListDelegateHandler
     }
 }

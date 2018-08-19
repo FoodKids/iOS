@@ -17,6 +17,7 @@ class IntroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.introChildView.nameLabel.delegate = self
         self.containerView.addSubview(self.introChildView)
         self.introChildView.alpha = 0
         self.introChildView.center.y += 100
@@ -33,6 +34,7 @@ class IntroViewController: UIViewController {
             self.introChildView.alpha = 1
             self.introChildView.center.y -= 100
         }, completion: nil)
+        self.proceedButton.isHidden = true
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -58,14 +60,25 @@ class IntroViewController: UIViewController {
     @objc
     func keyboardWillShowNotification(_ notification: NSNotification) {
         if self.introChildView.wieghtTextField.isEditing {
-            self.view.window?.frame.origin.y = -1 * 250
+            self.proceedButton.isHidden = false
+            self.view.window?.frame.origin.y = -1 * 220
         }
     }
     
     @objc
     func keyboardWillHideNotification(_ notification: NSNotification) {
         if self.view.window?.frame.origin.y != 0 {
-            self.view.window?.frame.origin.y += 250
+            self.view.window?.frame.origin.y += 220
         }
+    }
+}
+
+
+
+extension IntroViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

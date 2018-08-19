@@ -87,4 +87,8 @@ extension OrderViewController: UICollectionViewDataSource, UICollectionViewDeleg
         cell.priceLabel.text = "R$15-17"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("ENTROU")
+    }
 }

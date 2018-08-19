@@ -13,13 +13,13 @@ extension TagListView {
     
     class func config(view: TagListView) {
         view.textColor = UIColor.black
-        view.textFont = UIFont.systemFont(ofSize: 14)
+        view.textFont = UIFont.systemFont(ofSize: 14, weight: .semibold)
         view.paddingX = 30
         view.paddingY = 10
         view.cornerRadius = view.frame.height/4.0
         view.tagBackgroundColor = UIColor.clear
         view.textColor = UIColor.white
-        view.selectedTextColor = UIColor.black
+        view.selectedTextColor = UIColor.darkGray
         view.tagSelectedBackgroundColor = UIColor.white
         view.borderColor = UIColor.white
         view.alignment = .center
@@ -42,7 +42,6 @@ class TagListDelegateHandler: TagListViewDelegate {
         self.state = state
     }
     func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
-        
         switch self.state {
         case .single:
             _ = sender.selectedTags().map({ $0.isSelected = false })
