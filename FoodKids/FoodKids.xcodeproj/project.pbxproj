@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081283EF21299C2500C051CE /* ControllerMyOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081283EE21299C2500C051CE /* ControllerMyOrders.swift */; };
+		081283F121299CD700C051CE /* CellHistoric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081283F021299CD700C051CE /* CellHistoric.swift */; };
+		081283F321299CF600C051CE /* CellReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081283F221299CF600C051CE /* CellReview.swift */; };
 		086E7E162129348D001A06B3 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E152129348D001A06B3 /* AppTabBarController.swift */; };
 		086E7E1821293E12001A06B3 /* ControllerFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1721293E12001A06B3 /* ControllerFeedback.swift */; };
 		086E7E1C21293EB5001A06B3 /* ControllerInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */; };
@@ -60,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081283EE21299C2500C051CE /* ControllerMyOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMyOrders.swift; sourceTree = "<group>"; };
+		081283F021299CD700C051CE /* CellHistoric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHistoric.swift; sourceTree = "<group>"; };
+		081283F221299CF600C051CE /* CellReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReview.swift; sourceTree = "<group>"; };
 		086E7E152129348D001A06B3 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		086E7E1721293E12001A06B3 /* ControllerFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFeedback.swift; sourceTree = "<group>"; };
 		086E7E1921293E32001A06B3 /* ViewFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFeedback.swift; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 				08C1C0CF21297CC70006DAF8 /* ControllerLoad.swift */,
 				086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */,
 				086E7E1721293E12001A06B3 /* ControllerFeedback.swift */,
+				081283EE21299C2500C051CE /* ControllerMyOrders.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +305,8 @@
 				57F142BF2129777D007E79AE /* OrderTableCell.swift */,
 				57F142C121297A71007E79AE /* OrderCollectionCell.swift */,
 				57F142C321298331007E79AE /* OrderHeaderCell.swift */,
+				081283F021299CD700C051CE /* CellHistoric.swift */,
+				081283F221299CF600C051CE /* CellReview.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -517,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081283F321299CF600C051CE /* CellReview.swift in Sources */,
 				576690B4212942A90020E345 /* IntroViewController.swift in Sources */,
 				576690BE212954FC0020E345 /* IntroRestrictionView.swift in Sources */,
 				57B79F882129731300139596 /* CircleImageView.swift in Sources */,
@@ -531,6 +541,7 @@
 				08C1C0D021297CC70006DAF8 /* ControllerLoad.swift in Sources */,
 				086E7E1821293E12001A06B3 /* ControllerFeedback.swift in Sources */,
 				57F142C02129777D007E79AE /* OrderTableCell.swift in Sources */,
+				081283F121299CD700C051CE /* CellHistoric.swift in Sources */,
 				576690CD212960170020E345 /* AppProgressView.swift in Sources */,
 				086E7E1E21293EDA001A06B3 /* ViewInvoice.swift in Sources */,
 				57F142C421298331007E79AE /* OrderHeaderCell.swift in Sources */,
@@ -541,6 +552,7 @@
 				576690CB21295BF70020E345 /* HomeViewController.swift in Sources */,
 				08FF7CCF21298690006131DE /* ViewLoad.swift in Sources */,
 				57B79F862129714F00139596 /* OrderViewController.swift in Sources */,
+				081283EF21299C2500C051CE /* ControllerMyOrders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +732,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FoodKids/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -738,7 +753,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FoodKids/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -755,7 +773,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -772,7 +794,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -788,7 +814,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -804,7 +834,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
