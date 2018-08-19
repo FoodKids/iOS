@@ -11,8 +11,8 @@ import UIKit
 class IntroViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet var introChildView: UIView!
-    @IBOutlet var introRestrictionView: UIView!
+    @IBOutlet var introChildView: IntroChildView!
+    @IBOutlet var introRestrictionView: IntroRestrictionView!
     @IBOutlet var proceedButton: AppButton!
     
     override func viewDidLoad() {
@@ -20,6 +20,15 @@ class IntroViewController: UIViewController {
         self.containerView.addSubview(self.introChildView)
         self.introChildView.alpha = 0
         self.introChildView.center.y += 100
+        let notifier = NotificationCenter.default
+        notifier.addObserver(self,
+                             selector: #selector(IntroViewController.keyboardWillShowNotification(_:)),
+                             name: UIWindow.keyboardWillShowNotification,
+                             object: nil)
+        notifier.addObserver(self,
+                             selector: #selector(IntroViewController.keyboardWillHideNotification(_:)),
+                             name: UIWindow.keyboardWillHideNotification,
+                             object: nil)
         UIView.animate(withDuration: 0.2, delay: 0.2, options: .curveEaseInOut, animations: {
             self.introChildView.alpha = 1
             self.introChildView.center.y -= 100
@@ -44,5 +53,19 @@ class IntroViewController: UIViewController {
             }, completion: nil)
             self.proceedButton.center.y -= 200
         })
+    }
+    
+    @objc
+    func keyboardWillShowNotification(_ notification: NSNotification) {
+        if self.introChildView.wieghtTextField.isEditing {
+            self.view.window?.frame.origin.y = -1 * 250
+        }
+    }
+    
+    @objc
+    func keyboardWillHideNotification(_ notification: NSNotification) {
+        if self.view.window?.frame.origin.y != 0 {
+            self.view.window?.frame.origin.y += 250
+        }
     }
 }

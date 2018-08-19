@@ -11,6 +11,7 @@ import TagListView
 
 class IntroChildView: UIView {
 
+    @IBOutlet var wieghtTextField: UITextField!
     @IBOutlet weak var tagListView: TagListView!
     var tagListDelegateHandler = TagListDelegateHandler(state: .single)
     
