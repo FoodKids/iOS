@@ -24,6 +24,10 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func btnReturn(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension OrderViewController: UITableViewDataSource, UITableViewDelegate  {

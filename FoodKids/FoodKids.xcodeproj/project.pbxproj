@@ -20,6 +20,8 @@
 		08AB7AFD2128E7A3009D09E9 /* FoodKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7AFC2128E7A3009D09E9 /* FoodKidsTests.swift */; };
 		08AB7B082128E7A3009D09E9 /* FoodKidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B072128E7A3009D09E9 /* FoodKidsUITests.swift */; };
 		08AB7B202128F589009D09E9 /* ControllerFoodRetrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */; };
+		08C1C0D021297CC70006DAF8 /* ControllerLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1C0CF21297CC70006DAF8 /* ControllerLoad.swift */; };
+		08FF7CCF21298690006131DE /* ViewLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FF7CCE21298690006131DE /* ViewLoad.swift */; };
 		571FEBCA21293A25007B57BE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571FEBC921293A25007B57BE /* GradientView.swift */; };
 		576690B4212942A90020E345 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690B3212942A90020E345 /* IntroViewController.swift */; };
 		576690BC212954990020E345 /* IntroChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690BB212954990020E345 /* IntroChildView.swift */; };
@@ -78,6 +80,8 @@
 		08AB7B072128E7A3009D09E9 /* FoodKidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodKidsUITests.swift; sourceTree = "<group>"; };
 		08AB7B092128E7A3009D09E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFoodRetrictions.swift; sourceTree = "<group>"; };
+		08C1C0CF21297CC70006DAF8 /* ControllerLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerLoad.swift; sourceTree = "<group>"; };
+		08FF7CCE21298690006131DE /* ViewLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoad.swift; sourceTree = "<group>"; };
 		18F3CB917C18D6934186AAEB /* Pods-FoodKidsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2A881BF494220B15CA33648D /* Pods_FoodKidsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKidsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B61E2EDD0E2581C5A1A2B4 /* Pods-FoodKidsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsTests/Pods-FoodKidsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				57B79F852129714F00139596 /* OrderViewController.swift */,
 				08AB7B1F2128F589009D09E9 /* ControllerFoodRetrictions.swift */,
 				086E7E152129348D001A06B3 /* AppTabBarController.swift */,
+				08C1C0CF21297CC70006DAF8 /* ControllerLoad.swift */,
 				086E7E1B21293EB5001A06B3 /* ControllerInvoice.swift */,
 				086E7E1721293E12001A06B3 /* ControllerFeedback.swift */,
 			);
@@ -245,6 +250,7 @@
 				576690BB212954990020E345 /* IntroChildView.swift */,
 				576690BD212954FC0020E345 /* IntroRestrictionView.swift */,
 				0876EFFF21292DE700F6BC98 /* ViewMakeOrder.swift */,
+				08FF7CCE21298690006131DE /* ViewLoad.swift */,
 				086E7E1D21293EDA001A06B3 /* ViewInvoice.swift */,
 				086E7E1921293E32001A06B3 /* ViewFeedback.swift */,
 				576690CC212960170020E345 /* AppProgressView.swift */,
@@ -490,11 +496,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodKids/Pods-FoodKids-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatRatingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +528,7 @@
 				086E7E1C21293EB5001A06B3 /* ControllerInvoice.swift in Sources */,
 				0876F00021292DE700F6BC98 /* ViewMakeOrder.swift in Sources */,
 				576690BC212954990020E345 /* IntroChildView.swift in Sources */,
+				08C1C0D021297CC70006DAF8 /* ControllerLoad.swift in Sources */,
 				086E7E1821293E12001A06B3 /* ControllerFeedback.swift in Sources */,
 				57F142C02129777D007E79AE /* OrderTableCell.swift in Sources */,
 				576690CD212960170020E345 /* AppProgressView.swift in Sources */,
@@ -530,6 +539,7 @@
 				571FEBCA21293A25007B57BE /* GradientView.swift in Sources */,
 				576690D0212967930020E345 /* HomeCell.swift in Sources */,
 				576690CB21295BF70020E345 /* HomeViewController.swift in Sources */,
+				08FF7CCF21298690006131DE /* ViewLoad.swift in Sources */,
 				57B79F862129714F00139596 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,10 +720,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FoodKids/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -731,10 +738,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FoodKids/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -751,11 +755,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -772,11 +772,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -792,11 +788,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -812,11 +804,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodKidsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.FoodKidsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
