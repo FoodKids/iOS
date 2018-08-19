@@ -82,9 +82,9 @@ extension OrderViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "orderCollectionCell", for: indexPath) as! OrderCollectionCell
-        cell.circleImageView.image = UIImage(named: "homeCell\(indexPath.row+1)")
+        cell.circleImageView.image = UIImage(named: "homeCell\(Int.random(in: 1 ... 7))")
         cell.titleLabel.text = self.weekdays[indexPath.row]
-        cell.priceLabel.text = "R$15-17"
+        cell.priceLabel.text = "R$\(Int.random(in: 10 ... 18))-\(Int.random(in: 19 ... 28))"
         return cell
     }
     

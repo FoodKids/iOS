@@ -39,6 +39,9 @@ extension ControllerMyOrders {
     }
     
    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    if section == 0 {
+        return 1
+    }
         return 3
     }
     
@@ -51,7 +54,7 @@ extension ControllerMyOrders {
         if(indexPath.section == 0 ){
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellReview") as! CellReview
-            
+            cell.delegate = self
             cell.lbDate.text = "20/08/2018"
             cell.lbDetailPrice.text = "37,50 por dia"
             cell.lbTotalPrice.text = "187,50 por semana"
@@ -66,5 +69,18 @@ extension ControllerMyOrders {
         cell.lbTotalPrice.text = "187,50 por semana"
     
         return cell
+    }
+}
+
+
+
+
+extension ControllerMyOrders: CellReviewDelegate {
+    
+    func buttonClicked() {
+        let alert = UIAlertController(title: "Finalizado", message: "Obrigado por comprar conosco! :)", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
 }

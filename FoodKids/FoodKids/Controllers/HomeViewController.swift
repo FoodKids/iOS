@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     var homeCellsTitle = [
-    "Sem medo!", "Fazendinha fit", "De última hora!", "Férias até R$30,00", "Lorem ipsum", "Lorem ipsum"]
+        "Sem medo!", "Fazendinha fit", "De última hora!", "Férias até R$30,00", "Criança feliz :)", "Só risadas"]
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol CellReviewDelegate {
+    func buttonClicked()
+}
+
 class CellReview: UITableViewCell {
 
+    var delegate: CellReviewDelegate?
     @IBOutlet weak var lbDate           : UILabel!
     @IBOutlet weak var lbDetailPrice    : UILabel!
     @IBOutlet weak var lbTotalPrice     : UILabel!
@@ -25,6 +30,10 @@ class CellReview: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    @IBAction func finishPressed(_ sender: UIButton) {
+        self.delegate?.buttonClicked()
     }
 }
 
