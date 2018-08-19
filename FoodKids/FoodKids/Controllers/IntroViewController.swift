@@ -27,6 +27,10 @@ class IntroViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
+        guard self.introRestrictionView.superview == nil else {
+            (UIApplication.shared.delegate as! AppDelegate).showHome()
+            return
+        }
         self.introChildView.removeFromSuperview()
         self.containerView.addSubview(self.introRestrictionView)
         self.introRestrictionView.alpha = 0
