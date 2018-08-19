@@ -23,6 +23,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppTabBarController")
         UIApplication.shared.keyWindow?.rootViewController = vc
     }
-
 }
 

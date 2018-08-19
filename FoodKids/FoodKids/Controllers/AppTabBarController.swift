@@ -22,11 +22,10 @@ extension AppTabBarController : UITabBarControllerDelegate {
    
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         
-        if viewController is OrderViewController {
+        if viewController is UINavigationController {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let controller = storyboard.instantiateViewController(withIdentifier: "OrderViewController") as? OrderViewController {
-                
+            if let controller = storyboard.instantiateViewController(withIdentifier: "OrderNavigationVC") as? UINavigationController {
                 controller.modalPresentationStyle = .fullScreen
                 
                 self.present(controller, animated: true, completion: nil)

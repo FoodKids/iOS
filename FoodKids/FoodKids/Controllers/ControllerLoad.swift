@@ -22,8 +22,10 @@ class ControllerLoad: UIViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+            self?.dismiss(animated: true, completion: {
+                (UIApplication.shared.keyWindow?.rootViewController as! AppTabBarController).selectedIndex = 2
+            })
             
-            self?.performSegue(withIdentifier: "segueInvoice", sender: nil)
         }
     }
 }
