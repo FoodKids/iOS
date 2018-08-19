@@ -1,20 +1,24 @@
 PODS:
   - FloatRatingView (2.0)
+  - KRActivityIndicatorView (2.1.2)
   - TagListView (1.3.1)
 
 DEPENDENCIES:
   - FloatRatingView (~> 2.0.0)
+  - KRActivityIndicatorView (~> 2.1)
   - TagListView (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FloatRatingView
+    - KRActivityIndicatorView
     - TagListView
 
 SPEC CHECKSUMS:
   FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
+  KRActivityIndicatorView: 27e7a7e3da7fbc8e5405fbc4088b51cc2095a410
   TagListView: 6dafd34a61021c6db72c0c8e3a044054c9854311
 
-PODFILE CHECKSUM: 9bb645bb2627d6b0fc9035595f80ce5e97231652
+PODFILE CHECKSUM: bc10b6d157e45444ff8020844f02084e8b9f7d8d
 
 COCOAPODS: 1.5.3
