@@ -31,8 +31,10 @@
 		576690CD212960170020E345 /* AppProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690CC212960170020E345 /* AppProgressView.swift */; };
 		576690D0212967930020E345 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576690CF212967930020E345 /* HomeCell.swift */; };
 		57B79F862129714F00139596 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B79F852129714F00139596 /* OrderViewController.swift */; };
-		57B79F882129731300139596 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B79F872129731300139596 /* CircleView.swift */; };
+		57B79F882129731300139596 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B79F872129731300139596 /* CircleImageView.swift */; };
 		57F142C02129777D007E79AE /* OrderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F142BF2129777D007E79AE /* OrderTableCell.swift */; };
+		57F142C221297A71007E79AE /* OrderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F142C121297A71007E79AE /* OrderCollectionCell.swift */; };
+		57F142C421298331007E79AE /* OrderHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F142C321298331007E79AE /* OrderHeaderCell.swift */; };
 		6276B89FED99D3BDFF7CFCA5 /* Pods_FoodKidsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A881BF494220B15CA33648D /* Pods_FoodKidsTests.framework */; };
 		C58AFCFD816EF5A3F291D7DA /* Pods_FoodKidsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CCF02693878DBE8DBDE829 /* Pods_FoodKidsUITests.framework */; };
 		C5EE0109EF6E053327A5FA27 /* Pods_FoodKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */; };
@@ -92,8 +94,10 @@
 		576690CC212960170020E345 /* AppProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProgressView.swift; sourceTree = "<group>"; };
 		576690CF212967930020E345 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		57B79F852129714F00139596 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		57B79F872129731300139596 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		57B79F872129731300139596 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		57F142BF2129777D007E79AE /* OrderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableCell.swift; sourceTree = "<group>"; };
+		57F142C121297A71007E79AE /* OrderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionCell.swift; sourceTree = "<group>"; };
+		57F142C321298331007E79AE /* OrderHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeaderCell.swift; sourceTree = "<group>"; };
 		B78E4421EC308F0046CBBF6F /* Pods-FoodKidsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKidsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKidsUITests/Pods-FoodKidsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE360009DE54C45F1FE9392 /* Pods-FoodKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodKids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodKids/Pods-FoodKids.debug.xcconfig"; sourceTree = "<group>"; };
 		FB1B9E32B6A970D736C8D3C3 /* Pods_FoodKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,7 +248,7 @@
 				086E7E1D21293EDA001A06B3 /* ViewInvoice.swift */,
 				086E7E1921293E32001A06B3 /* ViewFeedback.swift */,
 				576690CC212960170020E345 /* AppProgressView.swift */,
-				57B79F872129731300139596 /* CircleView.swift */,
+				57B79F872129731300139596 /* CircleImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +290,8 @@
 			children = (
 				576690CF212967930020E345 /* HomeCell.swift */,
 				57F142BF2129777D007E79AE /* OrderTableCell.swift */,
+				57F142C121297A71007E79AE /* OrderCollectionCell.swift */,
+				57F142C321298331007E79AE /* OrderHeaderCell.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -505,11 +511,12 @@
 			files = (
 				576690B4212942A90020E345 /* IntroViewController.swift in Sources */,
 				576690BE212954FC0020E345 /* IntroRestrictionView.swift in Sources */,
-				57B79F882129731300139596 /* CircleView.swift in Sources */,
+				57B79F882129731300139596 /* CircleImageView.swift in Sources */,
 				086E7E162129348D001A06B3 /* AppTabBarController.swift in Sources */,
 				576690C921295B770020E345 /* ViewFeedback.swift in Sources */,
 				576690C821295AF20020E345 /* AppButton.swift in Sources */,
 				08AB7B202128F589009D09E9 /* ControllerFoodRetrictions.swift in Sources */,
+				57F142C221297A71007E79AE /* OrderCollectionCell.swift in Sources */,
 				086E7E1C21293EB5001A06B3 /* ControllerInvoice.swift in Sources */,
 				0876F00021292DE700F6BC98 /* ViewMakeOrder.swift in Sources */,
 				576690BC212954990020E345 /* IntroChildView.swift in Sources */,
@@ -517,6 +524,7 @@
 				57F142C02129777D007E79AE /* OrderTableCell.swift in Sources */,
 				576690CD212960170020E345 /* AppProgressView.swift in Sources */,
 				086E7E1E21293EDA001A06B3 /* ViewInvoice.swift in Sources */,
+				57F142C421298331007E79AE /* OrderHeaderCell.swift in Sources */,
 				576690C621295AD90020E345 /* TagListHelper.swift in Sources */,
 				08AB7AE82128E7A1009D09E9 /* AppDelegate.swift in Sources */,
 				571FEBCA21293A25007B57BE /* GradientView.swift in Sources */,
